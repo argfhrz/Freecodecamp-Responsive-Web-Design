@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: rgb(56, 55, 55);
+}
+
+body {
+    background: #ffffff;
+    padding: 0 10px;
+}
+
+.survey-page {
+    width: 100%;
+    max-width: 700px;
+    background: linear-gradient(to bottom right, #1e425a, #053b57);
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.survey-page #survey-form {
+    width: 100%;
+}
+
+.survey-page #survey-form .input,
+.survey-page #survey-form .input-gender,
+.survey-page #survey-form .input-check {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.survey-page #survey-form .input label,
+.survey-page #survey-form .input-gender #labela,
+.survey-page #survey-form .input-check #labelb {
+    font-family: 'Poppins', sans-serif;
+    width: 10rem;
+    color: white;
+    font-weight: 600;
+}
+
+.survey-page #survey-form #name,
+.survey-page #survey-form #last-name,
+.survey-page #survey-form #email,
+.survey-page #survey-form #number,
+.survey-page #survey-form #country,
+.survey-page #survey-form #phone,
+.survey-page #survey-form #comments {
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3 ease;
+}
+
+.survey-page #survey-form #name:focus,
+.survey-page #survey-form #last-name:focus,
+.survey-page #survey-form #email:focus,
+.survey-page #survey-form #number:focus,
+.survey-page #survey-form #country:focus,
+.survey-page #survey-form #phone:focus,
+.survey-page #survey-form #comments:focus {
+    border: 2px solid black;
+}
+
+.survey-page #survey-form #comments {
+    resize: none;
+    height: 120px;
+}
+
+.survey-page #survey-form .custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.survey-page #survey-form .custom-select select {
+    appearance: none;
+    border: none;
+    width: 100%;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    height: 100%;
+    padding: 8px 10px;
+}
+
+.survey-page #survey-form .input-gender #labela,
+.survey-page #survey-form .input-check #labelb {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 8rem;
+}
+
+.survey-page #survey-form .input-gender p,
+.survey-page #survey-form .input-gender label,
+.survey-page #survey-form .input-check #labeld {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.survey-page #survey-form .input-gender #radio-button,
+.survey-page #survey-form .input-check #checkbox-input {
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.survey-page #survey-form .input-gender #labelc,
+.survey-page #survey-form .input-check #labeld {
+    margin-right: 5px;
+    font-weight: 300;
+}
+
+.submit input {
+    padding: 8px 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+@media screen and (max-width:1024px) {
+    .survey-page #survey-form .input,
+    .survey-page #survey-form .input-gender,
+    .survey-page #survey-form .input-check {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .survey-page #survey-form .input label {
+        margin-bottom: 10px;
+    }
+    .survey-page #survey-form .input-gender #labela,
+    .survey-page #survey-form .input-check #labelb {
+        margin-bottom: 5px;
+    }
+}

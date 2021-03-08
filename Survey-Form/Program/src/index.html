@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Form Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill this survey below</p>
+    </header>
+    <main>
+        <section class="form-background">
+            <div class="survey-page">
+                <form id="survey-form">
+                    <div class="input">
+                        <label for="first-name" id="name-label">First Name</label>
+                        <input type="text" name="first-name" id="name" required placeholder="John">
+                    </div>
+                    <div class="input">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required placeholder="Doe">
+                    </div>
+                    <div class="input-gender">
+                        <p id="labela">Gender</p>
+                        <label id="labelc">
+                        <input type="radio" name="gender" value="male" id="radio-button" checked>Male
+                        </label>
+                        <label>
+                        <input type="radio" name="gender" value="female" id="radio-button">Female
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Johndoe@email.com">
+                    </div>
+                    <div class="input">
+                        <label for="age" id="number-label">Age</label>
+                        <input type="number" name="age" min="1" max="100" id="number" placeholder="Age">
+                    </div>
+                    <div class="input">
+                        <label for="adress">Country</label>
+                        <input type="text" name="country" id="country" placeholder="Country">
+                    </div>
+                    <div class="input">
+                        <label for="tel">Phone</label>
+                        <input type="tel" name="tel" pattern="[0-9]{12}" placeholder="08xxxxxxxxxx" id="phone">
+                    </div>
+                    <div class="input">
+                        <label for="package">Package</label>
+                        <div class="custom-select">
+                            <select id="dropdown">
+                                <option value="">Select</option>
+                                <option value="Internet">Internet</option>
+                                <option value="Internet + Tv">Internet + Tv</option>
+                                <option value="Internet + Telephone">Internet + Telephone</option>
+                                <option value="Internet + Telephone + Tv">Internet + Telephone + Tv</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-check">
+                        <p id="labelb">Improvement</p>
+                        <label id="labeld">
+                        <input type="checkbox" name="improvement" value="Internet-Speed" id="checkbox-input">Internet Speed
+                        </label>
+                        <label id="labeld">
+                        <input type="checkbox" name="improvement" value="TV-Channel" id="checkbox-input">Tv Channel
+                        </label>
+                        <label id="labeld">
+                        <input type="checkbox" name="improvement" value="Cheaper" id="checkbox-input">Cheaper
+                        </label>
+                        <label id="labeld">
+                        <input type="checkbox" name="improvement" value="Add-ons" id="checkbox-input">Add-ons
+                        </label>
+                    </div>
+                    <div class="input">
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </form>
+                <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
